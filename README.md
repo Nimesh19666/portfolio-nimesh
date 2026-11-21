@@ -1,4 +1,4 @@
-# Nimesh Gujari — Portfolio
+# Nimesh Gujari Portfolio
 
 React 19 + TypeScript + Vite + Tailwind CSS v4.
 
@@ -31,7 +31,7 @@ src/
 
 ## Editing content
 
-Change text, projects, jobs, skills and stats in `src/data/*` — no component edits needed.
+Change text, projects, jobs, skills and stats in `src/data/*` no component edits needed.
 In `experience.ts`, wrap words in `**double asterisks**` to bold them.
 
 ## Notes
@@ -39,4 +39,4 @@ In `experience.ts`, wrap words in `**double asterisks**` to bold them.
 - All styling is Tailwind utilities in the JSX. Colours/fonts are theme tokens in `src/styles/index.css` (`bg-cobalt`, `text-ink`, `font-display`, …); Archivo's width axis is `wdth-75` etc.
 - Per-frame effects (carousel, posters, cursor, smooth scroll) write transforms straight to the DOM from rAF loops; React state only tracks what is on screen.
 - Respects `prefers-reduced-motion`; custom cursor, tilt and magnetic effects are fine-pointer only.
-- The résumé button is a placeholder — set its `href` in `Hero.tsx` and remove the `#resume` branch in `App.tsx`.
+- The résumé button is a placeholder set its `href` in `Hero.tsx` and remove the `#resume` branch in `App.tsx`.

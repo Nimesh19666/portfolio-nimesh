@@ -1,10 +1,10 @@
-import { Accent, SectionHeading } from '@/components/ui/SectionHeading'
-import { Reveal } from '@/components/ui/Reveal'
-import { ScrollStory } from '@/components/features/ScrollStory'
-import { Terminal } from '@/components/features/Terminal'
+import { Accent, SectionHeading } from "@/components/ui/SectionHeading";
+import { Reveal } from "@/components/ui/Reveal";
+import { ScrollStory } from "@/components/features/ScrollStory";
+import { Terminal } from "@/components/features/Terminal";
 
 const STORY =
-  'Full stack developer with 2.9 years of experience shipping production web apps end-to-end. I’ve built real-time systems, secure authentication and a white-label multi-tenant platform running 20+ live storefronts — and I own deployment on AWS and VPS with CI/CD. I care about products that are *fast,* *reliable* and *easy* to maintain.'
+  "Full stack developer with 2.9 years of experience shipping production web apps end-to-end. I’ve built real-time systems, secure authentication and a white-label multi-tenant platform running 20+ live storefronts  and I own deployment on AWS and VPS with CI/CD. I care about products that are *fast,* *reliable* and *easy* to maintain.";
 
 export function About() {
   return (
@@ -23,13 +23,19 @@ export function About() {
           <Reveal className="mt-12 border-t border-line">
             <div className="grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-4 border-b border-line py-[18px] max-sm:grid-cols-[minmax(0,1fr)]">
               <span>
-                <strong className="font-semibold">B.E. Computer Engineering</strong> <span className="text-ink-2">— Atharva College of Engineering, Mumbai</span>
+                <strong className="font-semibold">
+                  B.E. Computer Engineering
+                </strong>{" "}
+                <span className="text-ink-2">
+                  {" "}
+                  Atharva College of Engineering, Mumbai
+                </span>
               </span>
-              <span className="mono">2021 — 2025</span>
+              <span className="mono">2021 2025</span>
             </div>
           </Reveal>
         </div>
       </div>
     </section>
-  )
+  );
 }
