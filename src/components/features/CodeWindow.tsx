@@ -52,9 +52,9 @@ interface Props {
   ref?: Ref<HTMLDivElement>
 }
 
-/** Fake editor that "types" the project snippets in a loop. */
+/** Fake editor that types the first project snippet once and leaves it on screen. */
 export function CodeWindow({ active, ref }: Props) {
-  const [index, setIndex] = useState(0)
+  const index = 0
   const [count, setCount] = useState(0)
   const [shipped, setShipped] = useState(false)
 
@@ -78,8 +78,8 @@ export function CodeWindow({ active, ref }: Props) {
       if (n < total) {
         timer = window.setTimeout(step, 26 + Math.random() * 40)
       } else {
+        // type the snippet once, then leave it on screen
         setShipped(true)
-        timer = window.setTimeout(() => setIndex((i) => (i + 1) % SNIPPETS.length), 3200)
       }
     }
     step()
